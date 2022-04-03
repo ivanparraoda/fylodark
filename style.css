@@ -1,0 +1,143 @@
+:root{
+    --DarkBlueintroandemailsignupbackground: hsl(217, 28%, 15%);
+    --DarkBluemainbackground: hsl(218, 28%, 13%);
+    --DarkBluefooterbackground: hsl(216, 53%, 9%);
+    --DarkBluetestimonialsbackground: hsl(219, 30%, 18%);
+    --CyanInsidecall-to-actiongradient: hsl(176, 68%, 64%);
+    --Blueinsidecall-to-actiongradient: hsl(198, 60%, 50%);
+    --LightRederror: hsl(0, 100%, 63%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    background-color: var(--DarkBluemainbackground);
+    min-height: 100vh;
+    color: var(--White);
+    justify-content: center;
+}
+
+main{
+    padding: 40px;
+    min-width: 100vw;
+}
+
+.hero-img-logo img{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav  a{
+   
+    color: var(--White);
+    text-decoration: none;
+}
+
+nav li{
+   display: inline;
+    list-style: none;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    float: right;
+}
+
+.hero-img{
+    width: 100%;
+    max-width: 300px;
+    
+}
+
+.text-present{
+    border: 5px solid red;
+    align-content: center;
+    margin-top: 100px;
+}
+
+.box-grid{
+    display: grid;
+    grid-template-columns: 1fr ;
+    
+}
+
+
+.testimonial-grid{
+    display: grid;
+    width: 360px;
+    grid-template-columns: 1fr;
+ 
+    
+}
+.test{
+    border: 3px solid red;
+}
+footer{
+    background-color: var(--DarkBluefooterbackground);
+}
+
+
+.footer-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        color: var(--White);
+        text-decoration: none;
+}
+        
+}
+
+.box-footer li{
+    color: white;
+    list-style: none;
+}
+
+
+
+
+
+@media screen and (min-width:400px) {
+
+    .box-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    .testimonial-grid{
+       
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5rem;
+        
+        
+    }
+
+
+    .footer-grid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: 
+        "five . . ."
+        "one two three four ";
+
+    }
+
+    .box-footer1{
+        grid-area: one;
+    }
+    .box-footer2{
+        grid-area: two;
+    }
+    .box-footer3{
+        grid-area: three;
+    }
+    .box-footer4{
+        grid-area: four;
+    }
+    .img-footer-logo{
+        grid-area: five;
+    }
+
+
+    
+    
+}

@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 :root{
     --DarkBlueintroandemailsignupbackground: hsl(217, 28%, 15%);
     --DarkBluemainbackground: hsl(218, 28%, 13%);
@@ -12,23 +16,29 @@ body{
     background-color: var(--DarkBluemainbackground);
     min-height: 100vh;
     color: var(--White);
+    font-family: 'Open Sans', sans-serif;
+    Font-size: 14px;
     justify-content: center;
 }
 
+h2,h1{
+    font-family: 'Raleway', sans-serif;
+}
 main{
-    padding: 40px;
-    min-width: 100vw;
+    padding: 35px;
+   
 }
 
-.hero-img-logo img{
-    margin-top: 30px;
-    margin-left: 50px;
+
+nav img{
+    
+    width: 100px;
+   margin-top: 20px;
+   
+   margin-right: 60px;
+   
 }
 
-nav ul{
-    margin: 0;
-    padding: 0;
-}
 nav  a{
    
     color: var(--White);
@@ -36,45 +46,194 @@ nav  a{
 }
 
 nav li{
-   display: inline;
+   display: inline-block;
     list-style: none;
-    margin-right: 40px;
-    margin-bottom: 10px;
-    float: right;
+    padding: 5px;
+   
+   
 }
 
-.hero-img{
+
+.text{
+    text-align: center;
+}
+
+.text h1{
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.text p{
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.link-get a{
+   display:inline-block ;
+    color: var(--White);
+    background-color: var(--Blueinsidecall-to-actiongradient);
+    text-decoration: none;
+    margin-top: 2rem;
+    padding: 10px 70px;
+    border-radius: 20px;
+    background:linear-gradient( hsl(176, 68%, 64%),hsl(198, 60%, 50%));
+
+
+}
+
+.hero-img img{
     width: 100%;
-    max-width: 300px;
+   
     
 }
 
 .text-present{
-    border: 5px solid red;
+   
     align-content: center;
-    margin-top: 100px;
+    
 }
 
 .box-grid{
     display: grid;
     grid-template-columns: 1fr ;
+    gap: 2.5rem;
+    margin-top: 6rem;
+    
+    
+}
+.box{
+    
+    padding: 20px;
+    text-align: center;
+   
+}
+.box img{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.box h2{
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.box p{
+    font-size: 13px;
+}
+
+.productive-card{
+    margin-top: 20px;
+    text-align: center;
+   
+}
+.productive-card h2{
+    font-size: 19px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.productive-card p {
+    margin-top: 20px;
+    margin-bottom: 30px;
     
 }
 
+.productive-card a{
+    position: absolute;
+    line-height: 5;
+    left: 10%;
+    color: var(--CyanInsidecall-to-actiongradient);
+}
 
 .testimonial-grid{
+    margin-top: 100px;
     display: grid;
-    width: 360px;
     grid-template-columns: 1fr;
+    row-gap: 30px;
  
     
 }
 .test{
-    border: 3px solid red;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.712);
+   padding: 1.5rem;
+   line-height: 1.5;
+    background-color: var(--DarkBlueintroandemailsignupbackground);
+    box-shadow: rgba(56, 56, 56, 0.12) 0px 2px 4px 0px, rgba(44, 44, 44, 0.32) 0px 2px 16px 0px;
+    
+}
+.test img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.test p:nth-child(1){
+
+     margin-bottom: 20px;
+}
+    
+
+
+.flexid{
+    display: flex;
+    line-height: .5;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.712);
+}
+
+.flexid p:nth-child(1){
+    font-weight: 700;
+    color: var(--White);
+}
+
+.signup{
+   text-align: center;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: var(--DarkBlueintroandemailsignupbackground);
+    /* position: absolute; */
+}
+
+.signup p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.712);
+}
+
+form{
+    display: flex;
+    
+    flex-direction: column;
+    gap: 20px;
+    /* border: none; */
+    
+}
+
+input[type=email]{
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+input[type=submit]{
+    border: none;
+    background:linear-gradient(  hsl(189, 41%, 40%),hsl(198, 60%, 50%));
+    border-radius: 20px;
+    padding: 10px;
+    color: var(--White);
+    font-weight: 700;
 }
 footer{
     background-color: var(--DarkBluefooterbackground);
 }
+
 
 
 .footer-grid{
@@ -84,16 +243,21 @@ footer{
         text-decoration: none;
 }
         
-}
+
 
 .box-footer li{
     color: white;
     list-style: none;
 }
 
+/* .social{
+    display: inline;
+    float: right;
+} */
 
 
 
+/* 
 
 @media screen and (min-width:400px) {
 
@@ -140,4 +304,4 @@ footer{
 
     
     
-}
+} */

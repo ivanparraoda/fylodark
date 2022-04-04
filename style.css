@@ -229,6 +229,7 @@ input[type=submit]{
     padding: 10px;
     color: var(--White);
     font-weight: 700;
+    /* ggg */
 }
 footer{
     background-color: var(--DarkBluefooterbackground);

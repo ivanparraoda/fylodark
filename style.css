@@ -395,11 +395,12 @@ footer{
 
      .text-present{
          
-         margin: 100px 300px 200px 300px;
+         margin: 100px 300px 50px 300px;
      }
 
      .hero-img{
          width: 100%;
+         
          
      }
 
@@ -423,6 +424,7 @@ footer{
         grid-template-columns: 1fr 1fr;
         margin-left: 10rem;
         margin-right: 10rem;
+        gap: 10px;
 
       
       
@@ -484,7 +486,7 @@ footer{
        
         grid-template-columns: 1fr 1fr  1fr;
         gap: 5rem;
-        margin: 100px 70px 100px 70px;
+        margin: 100px 70px 0 70px;
         
     }
    

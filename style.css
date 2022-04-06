@@ -167,13 +167,28 @@ nav li{
 }
 
 .testimonial-grid{
-    margin-top: 100px;
+    margin-top: 170px;
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 30px;
+    
  
     
 }
+
+
+
+.quote  {
+  position: relative;
+  border: none;
+  
+  top: -200px;
+  left: -30px;
+  z-index: -1;
+  border-radius: none;
+}
+
+
 .test{
     font-weight: 400;
     color: rgba(255, 255, 255, 0.712);
@@ -254,7 +269,7 @@ input[type=email]{
     border: none;
     background:hsl(198, 60%, 50%);
     border-radius: 20px;
-    padding: 10px;
+    padding: 10px 30px;
     color: var(--White);
     font-weight: 700;
     /* ggg */
@@ -282,6 +297,7 @@ footer{
         margin-top: 12rem;
         row-gap: 30px;
         
+        
 }
        
 
@@ -299,12 +315,6 @@ footer{
 
 
 
-.social{
-    
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .box-footer{
     line-height: 3;
@@ -327,16 +337,26 @@ footer{
 }
 
 
+
+.social {
+  
+    margin-top: 80px;
+    margin-left: 60px;
+    
+   
+}
+
 .social a:nth-child(2){
-    margin-left: 5px;
-    margin-right: 5px;
+    /* margin-left: 5px;
+    margin-right: 5px; */
 }
 .social a{
-    
+    /* margin-left: 50px; */
     color: white;
     padding: 10px;
     border: 2px solid white;
     border-radius: 50%;
+    gap: 10px;
     
 }
 .social a:hover{
@@ -347,7 +367,7 @@ footer{
 
 
 
-@media screen and (min-width:400px) {
+@media screen and (min-width:500px) {
 
     body{
       
@@ -355,11 +375,7 @@ footer{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 55%;
-        min-height: 100vh;
-        color: var(--White);
-        font-family: 'Open Sans', sans-serif;
-        Font-size: 14px;
-        justify-content: center;
+      
     }
 
    
@@ -381,12 +397,13 @@ footer{
      
 
      .text-present{
-         align-content: center;
-        
+         
          margin: 100px 300px 200px 300px;
      }
 
-
+     .hero-img{
+         max-width: 800px;
+     }
 
     .text h1{
     font-size: 3em;
@@ -469,7 +486,8 @@ footer{
        
         grid-template-columns: 1fr 1fr  1fr;
         gap: 5rem;
-        margin: 100px 20px 100px 20px;
+        margin: 100px 70px 100px 70px;
+        
         
         
     }
@@ -477,80 +495,43 @@ footer{
    
     
 
-
-
-
-
-
-
-
-
-
-
-    
-
     
     .signup{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+         width: 500px;
+         transform: translateY(200px);
     
-        align-items: center;
-        justify-content: center;
-       display: grid;
-        /* height:100%; */
-       width:50%;
         
     }
    
 
     
 form{
+    font-display: flex;
     position: relative;
-   
+    flex-direction: row;
     
 }
 
 input[type=email]{
-  
-    padding: 10px;
-    margin-left: 500px;
-    margin-right: 500px;
+  display: inline  ;
+    padding: 10px 50px;
+    /* position: absolute; */
    
     
 }
 .boton{
-    display: inline-block;
-    position: absolute; 
-    
-    font-weight: 700;
-    right: 20%;
-    bottom: 20%;
-    /* ggg */
+    transform: translateY(18px);
 }
     
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    footer{
+        margin-top: 90px;
+    }
 
     .footer-grid{
         display: grid;
@@ -577,16 +558,15 @@ input[type=email]{
     .img-footer-logo{
         grid-area: five;
     }
-    .social{
-        grid-area: six;
+    
+
+    .social a{
+        float: right ;
+        transform: translateY(-190px);
+        margin: 10px;
     }
    
-   
  
- .social a:nth-child(2){
-    margin: 10px;
-   
- }
-    
+
    
 }
